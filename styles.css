@@ -1,5 +1,6 @@
 body {
-  background-color: #fafafa;
+  background-color: #d8d8d8;
+  height: 2000px;
 }
 .header {
   width: 100%;
@@ -32,7 +33,7 @@ body {
   font-size: 45px;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 @media (max-width: 760px) {
   .hi-text {
@@ -63,8 +64,28 @@ body {
 
 .card-num3 {
   width: 100%;
-  margin-top: 15px;
+  margin-top: 13px;
 }
+.bg-img-card1 {
+  height: 399px;
+  object-fit: cover;
+}
+.contacts-div {
+  background: #4568dc;
+  background: -webkit-linear-gradient(to right, #b06ab3, #4568dc);
+  background: linear-gradient(to right, #b06ab3, #4568dc);
+  border-radius: 4px;
+
+  width: 100%;
+  margin-top: 10px;
+  height: 143px;
+
+  text-align: center;
+}
+.contacts-div h2 {
+  line-height: 143px;
+}
+
 @media (max-width: 770px) {
   .card-num1 {
     width: 100%;
@@ -78,13 +99,13 @@ body {
     padding-right: 10px;
   }
   .card-num2 {
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 15px;
   }
   .card-num3 {
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .img3 {
     height: 100px;
