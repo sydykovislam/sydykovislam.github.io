@@ -1,0 +1,56 @@
+body {
+  background-color: #f8f8f8;
+}
+.header {
+  width: 100%;
+  height: 400px;
+  background-image: url(bg-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hi-text {
+  align-items: center;
+  color: white;
+  font-family: "Oxygen";
+  font-weight: 400;
+  font-size: 45px;
+}
+.header p {
+  font-family: "Work Sans";
+  font-size: 25px;
+  font-weight: lighter;
+  display: block;
+  color: rgb(185, 185, 185);
+  text-align: center;
+}
+.body-title {
+  font-size: 45px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+/* BODY */
+.basis {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card-num2 {
+  width: 100%;
+}
+
+.card-num3 {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.btn-readmore {
+  border: 4px solid #007bff;
+}
+
+.article-block {
+}
