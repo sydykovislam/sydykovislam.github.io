@@ -1,5 +1,5 @@
 body {
-  background-color: #f8f8f8;
+  background-color: #fafafa;
 }
 .header {
   width: 100%;
@@ -19,6 +19,7 @@ body {
   font-weight: 400;
   font-size: 45px;
 }
+
 .header p {
   font-family: "Work Sans";
   font-size: 25px;
@@ -33,12 +34,29 @@ body {
   margin-top: 20px;
   margin-bottom: 50px;
 }
+@media (max-width: 760px) {
+  .hi-text {
+    font-size: 35px;
+    width: 90%;
+    margin-top: -10px;
+    margin-bottom: 50px;
+  }
+  .body-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .header {
+    height: 250px;
+    background-size: cover;
+  }
+}
 /* BODY */
 .basis {
-  width: 80%;
   margin: 0 auto;
 }
-
+.card-num1 {
+  padding: 0px;
+}
 .card-num2 {
   width: 100%;
 }
@@ -46,6 +64,31 @@ body {
 .card-num3 {
   width: 100%;
   margin-top: 15px;
+}
+@media (max-width: 770px) {
+  .card-num1 {
+    width: 100%;
+  }
+  .bg-img-card1 {
+    height: 230px;
+    object-fit: cover;
+  }
+  #div-ab-me {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .card-num2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+  }
+  .card-num3 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .img3 {
+    height: 100px;
+  }
 }
 
 .btn-readmore {
