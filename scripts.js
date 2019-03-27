@@ -15,11 +15,11 @@ function openModal() {
   // document.contactsModal.style.top = scrollHeight + "px";
 
   contactsModal.className = "contacts-modal modal-on";
-  contBackdrop.className = "backdrop modal-on";
+  contBackdrop.className = "backdrop backdrop-on";
 }
 function closeModal() {
   contactsModal.className = "contacts-modal modal-off";
-  contBackdrop.className = "backdrop modal-off";
+  contBackdrop.className = "backdrop backdrop-off";
 }
 
 contactsModalBtn.addEventListener("click", openModal);
