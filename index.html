@@ -55,9 +55,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="modal" data-target="#contacts"
-                >Contacts</a
-              >
+              <a class="nav-link" id="contacts-nav-btn">Contacts</a>
             </li>
           </ul>
         </div>
@@ -147,17 +145,65 @@
       </div>
     </div>
 
-    <!-- Modals -->
+    <!-- FORM -->
 
     <div
       class="modal fade"
+      id="form"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <form class="form">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Name"
+                  id="name"
+                />
+              </div>
+            </div>
+            <div class="form-group col-md-6" style="padding-left: 0px;">
+              <label for="country">Country</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Country"
+                id="country"
+              />
+            </div>
+            <div class="form-group">
+              <label for="textarea">Your mail:</label>
+              <textarea class="form-control" id="textarea" rows="3"></textarea>
+            </div>
+
+            <div class="button">
+              <div class="container">
+                <div class="tick"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modals -->
+
+    <div
+      class="modal fade "
       id="about-me"
       tabindex="-1"
       role="dialog"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">About Me</h5>
@@ -194,7 +240,7 @@
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Services</h5>
@@ -231,7 +277,7 @@
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Portfolio</h5>
@@ -259,6 +305,7 @@
         </div>
       </div>
     </div>
+
     <div class="backdrop modal-off"></div>
     <div class="contacts-modal modal-off">
       <div class="icons">
@@ -279,10 +326,11 @@
         /></a>
       </div>
 
-      <div class="form-btn">
+      <div class="form-btn" data-toggle="modal" data-target="#form">
         <h2>Do you want contact with me?</h2>
       </div>
     </div>
+
     <footer class="footer">
       <h1>#FOOTER IS WANTED</h1>
     </footer>
