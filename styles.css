@@ -285,6 +285,8 @@ body {
 
 .my-skills {
   display: flex;
+  flex-flow: wrap;
+
   justify-content: space-between;
   flex-direction: row;
   margin-bottom: 40px;
@@ -295,6 +297,7 @@ body {
   align-items: center;
   width: 30%;
   height: 350px;
+  min-width: 300px;
   /* background-color: rgb(238, 236, 236); */
 }
 .skill-icons {
