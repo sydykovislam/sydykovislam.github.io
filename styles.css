@@ -117,6 +117,17 @@ body {
     height: 100px;
   }
 }
+
+.aboutMe-text {
+  font-size: 22px;
+}
+.soon {
+  font-size: 45px;
+  font-family: "Montserrat";
+  line-height: 300px;
+  text-align: center;
+  font-weight: bold;
+}
 .form {
   padding: 15px;
 }
@@ -268,6 +279,73 @@ body {
   100% {
     transform: scale(1);
   }
+}
+
+/* SKILLS */
+
+.my-skills {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+.skill-blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 350px;
+  /* background-color: rgb(238, 236, 236); */
+}
+.skill-icons {
+  height: 90px;
+  width: 90px;
+}
+.skill-1 img {
+  height: 100px;
+  width: 100px;
+  margin: 0px 0px 0px 0px;
+}
+.skill-1 h1 {
+  margin: 10px 0px 0px 0px;
+}
+.skill-1 p {
+  margin-top: 19px;
+}
+.skill-2 img {
+  margin: 3px 0px 0px 0px;
+}
+.skill-2 h1 {
+  margin: 15px 0px 16px 0px;
+}
+.skill-3 img {
+  height: 120px;
+  width: 120px;
+  margin: -10px 0px 0px 0px;
+}
+.skill-3 h1 {
+  margin: 0px 0px 0px 0px;
+}
+.skill-3 p {
+  margin: 14px 0px 0px 0px;
+}
+.skill-text {
+  font-size: 21px;
+  text-align: center;
+}
+
+.services-text {
+  font-size: 24px;
+  font-family: "Montserrat";
+  margin-bottom: 30px;
+}
+.why {
+  /* font-size: 20px; */
+  font-family: "Montserrat";
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 70px;
 }
 
 .footer {
