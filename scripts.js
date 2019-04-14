@@ -64,33 +64,74 @@ pageSwitcher(btnLinks);
 
 //Send letter
 
+let nameInput = document.querySelector("#name");
+let emailInput = document.querySelector("#email");
+let letter = document.querySelector("#textarea");
+let formInputs = document.querySelector(".form-inputs");
+
+nameInput.addEventListener("change", function() {
+  nameTruth = false;
+
+  if (this.value.length > 2) {
+    this.className = "form-control form-inputs";
+    nameTruth = true;
+  } else {
+    this.className = "form-control form-inputs error-input";
+  }
+});
+
+emailInput.addEventListener("change", function() {
+  emailTruth = false;
+
+  if (this.value.length > 5) {
+    this.className = "form-control form-inputs";
+    emailTruth = true;
+  } else {
+    this.className = "form-control form-inputs error-input";
+  }
+});
+
 let sendBtn = document.querySelector(".sendBtn");
+// sendBtn.disabled = true;
+
+letter.addEventListener("change", function() {
+  letterTruth = false;
+
+  if (this.value.length > 10) {
+    this.className = "form-control form-inputs";
+    letterTruth = true;
+  } else {
+    this.className = "form-control form-inputs error-input";
+  }
+});
+
+// formInputs.addEventListener("change", function() {
+//   if (letterTruth == true && emailTruth == true && nameTruth == true) {
+//     sendBtn.disabled = false;
+//   } else {
+//     sendBtn.disabled = true;
+//   }
+// });
+
 sendBtn.addEventListener("click", sendLetter);
 
 function sendLetter() {
   const user = {
-    name: document.querySelector("#name").value,
-    email: document.querySelector("#email").value,
-    letter: document.querySelector("#textarea").value
+    name: nameInput.value,
+    email: emailInput.value,
+    letter: letter.value
   };
 
-  if (user.name.length > 5 && user.email.length > 5 && user.letter.length > 5) {
-    axios
-      .post(
-        "https://my-personal-9e097.firebaseio.com/contacts.json",
-        // name: "Islam",
-        // email: "islamsydykov",
-        // letter: "lakjd;fkjas"
+  axios
+    .post(
+      "https://my-personal-9e097.firebaseio.com/contacts.json",
 
-        user
-      )
-      .then(response => {
-        alert("Success");
-      })
-      .catch(error => {
-        alert("error");
-      });
-  } else {
-    alert("Fill all the data, please");
-  }
+      user
+    )
+    .then(response => {
+      alert("Success");
+    })
+    .catch(error => {
+      alert("error");
+    });
 }
